@@ -1,0 +1,537 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.demoform {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); 
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); 
+    }
+  }
+}
+
+.p1{
+  background-color: #007bff;
+  // height: 100px;
+  color:  white;
+  text-align: center;
+  padding: 27px;
+  font-size: large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+
+//
+/* Form layout */
+/* Form layout */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-bottom: 5px;
+}
+
+.form-container div {
+  margin-bottom: 10px;
+}
+
+/* Label styles */
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Input styles */
+/* Form layout */
+.form-container1 {
+  display: flex;
+  flex-direction: column;
+  
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-top: 6px;
+  margin-bottom: 5px;
+}
+
+
+.form-container div {
+  margin-bottom: 10px;
+}
+
+/* Label styles */
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Input styles */
+.input-field,
+.people-picker {
+  width: calc(100% - 16px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #333;
+}
+
+/* Button container */
+.button-container {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-button,
+.cancel-button {
+  width: calc(50% - 5px); 
+  padding: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  transition: opacity 0.3s ease;
+}
+
+/* Individual button styles */
+.submit-button {
+  background-color: #4CAF50; /* Green */
+}
+
+.cancel-button {
+  background-color: #f44336; /* Red */
+}
+
+/* Hover effect on buttons */
+.submit-button:hover,
+.cancel-button:hover {
+  opacity: 0.8;
+}
+
+/* Button styles */
+.view-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: inherit;
+  cursor: pointer;
+  background-color: #007bff; 
+  color: white;
+  font-size: 14px;
+  margin: 5px;
+  float: right;
+  margin-right: inherit;
+}
+// view btn
+.view-btn2 {
+  background-color: transparent;
+
+  cursor: pointer;
+
+  text-align: center;
+  // height: 100%;
+  border: none;
+  width: 100%;
+}
+.view-btn2:hover {
+  opacity: 0.8;
+}
+.view-btn2:after {
+  content: ' »'; 
+  margin-left: 5px;
+}
+/* Hover effect on button */
+.view-btn:hover {
+  opacity: 0.8;
+}
+
+// for Tabel
+
+.tbl {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.tblTH{
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+.tblTD {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+.tblTr1{
+  background-color: white;
+}
+.tblTr {
+  // box-shadow: 0 8px 16px rgba(0,0,0,.15)
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  // display: block;
+}
+.tblTr:nth-child(even) {
+  background-color: #dddddd;
+}
+.tblTr:nth-child(odd) {
+  background-color: white;
+}
+.tblTr:hover{
+  background-color: #007bff;
+  color: white;
+  
+}
+
+
+
+.card {
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  position: absolute;
+  box-sizing: border-box;
+  margin-top: 43px; /* Add 50px margin-top */
+  border: 2px solid #007bff;
+}
+
+.cancel-button1 {
+  position: inherit;
+  top: 10px;
+  right: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6347;
+  color: white;
+  cursor: pointer;
+  width: auto;
+  float: right;
+  margin: 20px 10px;
+  font-size: large;
+  font-weight: bold;
+}
+.cancel-button1:hover{
+  background-color: white;
+}
+
+.card {
+  // width: 300px;
+  // padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  text-align: center;
+}
+
+.value {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+//Paggination
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem; 
+  gap: 5px;
+}
+
+.pagination .pageNum {
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #007bff; 
+  border: 1px solid #007bff; 
+  transition: all 0.3s ease;
+}
+
+.pagination .pageNum:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+
+.pagination .active {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+}
+
+//Cancel Button
+.view-btn3 {
+  background-color: transparent;
+  cursor: pointer;
+  color: #ff6347;
+  text-align: center;
+  border: none;
+  width: 100%;
+}
+.view-btn3:hover {
+  opacity: 0.8;
+  color: white;
+}
+.view-btn3:after {
+  content: ' ✕';
+  margin-left: 5px; 
+}
+
+//view card with cancel
+
+.card1 {
+  width: 97.5%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  position: absolute;
+  box-sizing: border-box;
+  margin-top: 43px;
+  border: 2px solid #007bff;
+  padding-top: 50px;
+}
+
+//details view component css
+.detailview{
+  width: 100%;
+  height: 50%;
+  border: 2px solid #007bff;
+}
+
+.Case1{
+  background-color: #007bff;
+  height: 70px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  // border: 2px solid red;
+}
+.RenderCase{
+  padding-top: 22px;
+  padding-left: 25px;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Div2{
+  height: 250px;
+  border: 2px solid #007bff;
+}
+
+//nav
+/* Navbar styles */
+.navbar {
+  // display: flex;
+  justify-content: center;
+  background-color:gainsboro;
+  padding: 10px 0;
+  color: #007bff;
+}
+.navbar:hover{
+  background-color:black B;
+}
+/* Button styles */
+.nav-btn {
+  text-decoration:none;
+  font-weight: bold;
+  color: #007bff;
+  padding: 8px 16px;
+  margin: 0 10px;
+  // border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.nav-btn:hover {
+  background-color:#007bff;
+  color: white;
+}
+
+.memberdiv{
+  height:190px;
+  width: 330px;
+  border: 2px solid #007bff;
+  float: left;
+}
+
+
+.table-container {
+  width: 300px; 
+  margin: 0 auto; }
+
+.vertical-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.vertical-table th,
+.vertical-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.vertical-table th {
+  background-color: #f2f2f2;
+}
+
+/* Style for the unordered list inside the table cell */
+.vertical-table ul {
+  padding: 0;
+  margin: 0;
+}
+
+.vertical-table li {
+  list-style: none;
+  margin-bottom: 5px;
+  text-align: center;
+
+}
+.tbody{
+  height: 190px;
+}
+
+//Add event
+.add{
+  width: auto;
+  height: 30px;
+
+}
+
+//Add input
+
+.add {
+  margin-bottom: 15px;
+}
+
+/* Label styles */
+.lblAdd {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #007bff;
+  padding: 5px;
+  
+}
+
+/* Input styles */
+.inpAdd {
+  width: 97.5%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Focus style for input */
+.inpAdd:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+
+
+/* Button container */
+.buttonContainer {
+  display: flex;
+  justify-content: center; 
+  gap: 10px; 
+}
+/* Common styles for both buttons */
+.eventSubmit {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #007bff; 
+  color: white;
+  font-size: 14px;
+}
+
+/* Hover effect on buttons */
+.eventSubmit:hover {
+  opacity: 0.8;
+}
+
+
+
+
+
+/* Styling for the error class */
+.error {
+  color: #ff0000; 
+  font-size: 0.9em; 
+  font-style: italic; 
+  margin-top: 4px; 
+  display: block; 
+}
+
+
+
+.tableEvent {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+ .thEvent {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+.tdEvent{
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+
+//
+.update-button,
+.cancelUpdate-button {
+  width: calc(50% - 5px); 
+  padding: 8px 0;
+  border: none;
+  // border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  transition: opacity 0.3s ease;
+  // float: right;
+}
+
+.update-button {
+  background-color: #4CAF50; 
+}
